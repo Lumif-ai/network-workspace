@@ -1,4 +1,11 @@
 {
-  "name": "lumifai-network",
-  "packageManager": "yarn@4.7.0"
+  "name": "@lumifai/network",
+  "packageManager": "yarn@4.7.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
 }

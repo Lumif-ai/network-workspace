@@ -1,0 +1,66 @@
+framework: bee  # or eliza or llamaindex
+
+# Bee Framework Configuration
+bee:
+  agent:
+    llm:
+      type: OpenAIChatModel
+      model: gpt-4
+      config:
+        apiKey: ${OPENAI_API_KEY}
+
+    memory:
+      type: UnconstrainedMemory
+
+    tools:
+      - name: taTool
+        type: mcp
+        config:
+          uri: http://ta-mcp.lumif.ai/sse
+          # Tool-specific configuration
+
+    templates:
+      systemPrompt: "You are a helpful AI assistant..."
+
+# Eliza Framework Configuration
+eliza:
+  agent:
+    # Eliza-specific agent configuration
+
+      # Eliza-specific settings
+
+# LlamaIndex Framework Configuration
+llamaindex:
+  agent:
+    # LlamaIndex-specific agent configuration
+
+      # LlamaIndex-specific settings
+
+name: "Technical Analysis Agent"
+agentId: "test"
+description: "An agent specialized in performing technical analysis on cryptocurrency trading pairs"
+keywords:
+  - "technical-analysis"
+  - "cryptocurrency"
+  - "trading"
+  - "finance"
+url: "http://localhost:3001/chat"
+api:
+  chatEndpoint: "/chat"
+
+lumifai:
+  privateKeyPath: "./wallet.key"
+  agentRegistrationContract: "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0"
+  agentId: "test.lumifai.eth"
+  rpcUrl: "http://127.0.0.1:8545/"
+  chain:
+    id: 31337
+    name: "Hardhat"
+    nativeCurrency:
+      decimals: 18
+      name: "Ether"
+      symbol: "ETH"
+    rpcUrls:
+      default:
+        http:
+          - "http://127.0.0.1:8545"

@@ -1,0 +1,33 @@
+{
+  "name": "@lumifai/contracts",
+  "version": "0.1.0",
+  "description": "Smart contracts for the Lumif.ai network",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "hardhat": "hardhat node"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^0.15.10",
+    "@nomicfoundation/hardhat-ignition-viem": "^0.15.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@nomicfoundation/hardhat-viem": "^2.0.0",
+    "@nomicfoundation/ignition-core": "^0.15.10",
+    "@types/chai": "^4.2.0",
+    "@types/chai-as-promised": "^7.1.6",
+    "@types/mocha": ">=9.1.0",
+    "chai": "^4.2.0",
+    "hardhat": "^2.22.19",
+    "hardhat-gas-reporter": "^1.0.8",
+    "solidity-coverage": "^0.8.1",
+    "viem": "^2.7.6"
+  },
+  "dependencies": {
+    "@ensdomains/ens-contracts": "^1.2.5"
+  }
+}
